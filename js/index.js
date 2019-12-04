@@ -52,12 +52,6 @@ intro.addEventListener('contextmenu', () => {
     event.stopPropagation();
 })
 
-const nav = document.querySelector("a");
-
-nav.addEventListener('click', (event) => {
-    event.preventDefault();
-})
-
 const header = document.querySelector("header");
 header.addEventListener('drag', () => {
     header.style.backgroundColor = "yellow";
@@ -66,3 +60,10 @@ header.addEventListener('drag', () => {
 window.addEventListener('resize', () => {
     header.style.backgroundColor = "blue";
 })
+
+const stopLink = document.querySelector("a");
+
+stopLink.addEventListener("click", (event) => {
+    event.preventDefault();
+})
+ 
