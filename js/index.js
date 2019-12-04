@@ -61,9 +61,10 @@ window.addEventListener('resize', () => {
     header.style.backgroundColor = "blue";
 })
 
-const stopLink = document.querySelector("a");
+const stopLink = document.querySelectorAll("a");
 
-stopLink.addEventListener("click", (event) => {
+stopLink.forEach(link => {
+    addEventListener("click", (event) => {
     event.preventDefault();
-})
+})})
  
